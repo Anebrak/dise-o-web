@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: 'cafe';
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+
+header{padding-top: 150px;}
+
+body{background-color: antiquewhite;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgb(148, 107, 5);
+    width: 100%;
+    align-items: center;
+    display:flex ;
+    justify-content: space-between;
+    height: 70px;
+    color: antiquewhite;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+    }
+
+header p {font-size: 3cap;
+text-align: center;
+padding-bottom: 5cap;
+padding-top: 3cap;}
+
+h1 { text-align: center;}
+
+.inicio {padding: 30px;
+    font-size: 2cap;}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+.catalogo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.producto{
+    width: 400px;
+    text-align: center;
+    background-color:  rgb(148, 107, 5);
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.producto h3 { font-size: 1.85rem;
+color: antiquewhite;}
+
+.producto h4 { font-size: 1.85rem;
+background-color: antiquewhite;
+border-radius: 20rem;
+width: 15rem;
+padding: 0.7rem;
+margin-left: 17%;
+}
+
+.producto:nth-child(3) h4 {margin-top: 3.7rem ;}
+
+
+
+

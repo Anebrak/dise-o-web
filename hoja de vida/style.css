@@ -1,0 +1,87 @@
+body{background-color: black;
+text-align: center;
+color: aliceblue;}
+
+ul{list-style-position: inside;}
+ol{list-style-position: inside;
+text-align: left;}
+
+.CajaHead p {
+border-radius: 10px;
+background-color: gray;
+width: 400px;
+font-size: 3cap;
+margin: 0 auto;
+padding: 80px;
+}
+
+.cabeza img{border-radius: 50%;
+height: 25rem;
+border: 5px solid rgb(130, 53, 201);}
+
+.cabeza h1{font-size: 5rem;}
+
+
+
+
+section{
+min-height: 60vh;
+padding: 50px 0;
+}
+
+.datosPersonales{
+background-color: gray;
+text-align: center;
+}
+
+.datosPersonales h2{
+font-size: 5rem;
+}
+.datosPersonales li{
+font-size: 2rem;
+padding: 10px;
+
+}
+
+.hobbies h2{
+    font-size: 5rem;
+}
+.hobbies li{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.titleconoci {font-size: 5rem;}
+
+.conoci{background-color:  gray;}
+
+.conocimientos {
+display: flex;
+justify-content: space-between;
+max-width: 1500px;
+padding: 80px;
+gap: 50px;
+margin: auto;
+}
+
+
+.caja{background: rgb(1, 1, 1);
+text-align: center;
+border-radius: 10px;
+font-size: 3cap;
+flex: 1;
+}
+
+
+.contacto{
+font-size: 5rem;
+}
+.contacto{
+font-size: 2rem;
+padding: 10px;
+
+}
+
+
+
+
