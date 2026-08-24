@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: 'cafe';
-  src: url(../fonts/Righteous-Regular.ttf);
+  align-items: center;
+  text-align: center;
 }
 
-header{padding-top: 150px;}
+header{padding-top: 250px;}
 
 body{background-color: antiquewhite;
 }
@@ -30,10 +30,23 @@ nav ul {
     list-style: none;
     }
 
-header p {font-size: 3cap;
+.intro p {font-size: 5cap;
 text-align: center;
-padding-bottom: 5cap;
-padding-top: 3cap;}
+margin-left: 10rem;}
+
+.intro { justify-content: space-between;
+align-items: center;
+display: flex; 
+background-color: rgb(148, 107, 5) ;
+color: antiquewhite;
+margin-bottom: 30rem;
+height: 30rem;
+width: 100rem;
+margin-left: 7rem;
+border-radius: 10cap;}
+
+.intro img {width: 400px;
+margin-right: 10rem;}
 
 h1 { text-align: center;}
 
@@ -75,7 +88,35 @@ padding: 0.7rem;
 margin-left: 17%;
 }
 
-.producto:nth-child(3) h4 {margin-top: 3.7rem ;}
+.historia {margin-top: 30rem;
+}
+.historia h1 {font-size: 5cap;
+}
+
+.historia-parrafo {font-size: 3cap;
+text-align: center;
+margin-left: 5rem;
+margin-right: 5rem;}
+
+.historia-cont { justify-content: space-between;
+align-items: center;
+display: flex; 
+background-color: rgb(148, 107, 5) ;
+color: antiquewhite;
+margin-bottom: 30rem;
+height: 60rem;
+width: 100rem;
+margin-left: 7rem;
+border-radius: 10cap;
+}
+
+.historia-cont img {width: 500px;
+margin-right: 5rem;
+}
+
+.historia-cont figcaption {font-size: 1.5cap;
+text-align: left;}
+
 
 
 
