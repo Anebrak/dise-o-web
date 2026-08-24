@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="archivos\css\styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="formulario">
+        <form action="" method="get">
+        <label>Nombre:</label><input type="text">
+        <label>Telefono: </label><input type="text">
+            <input type="submit" value="Enviar">
+
+        </form>
+    </section>
+
+
+    <section class="formulario2">
+        <form action="" method="get">
+            <fieldset> 
+                <legend>Datos personales</legend> 
+                <label>Nombre:</label>
+                <input type="text">
+                <input type="submit" value="Enviar">
+                </input>
+                
+                <label>Elegir memoria USB:<input  list="listaUsb"></label>
+                <datalist id="listaUsb" >
+                <option value="8" >
+                <option value="16" >
+                <option value="32" >
+                <option value="64" >
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="formulario3">
+
+        <label for="disco">Uso de disco:</label>
+                <meter id="disco" value=".20" low=".25" high=".60" optimum=".90">60%</meter>
+
+
+    </section>
+
+
+</body>
+</html>

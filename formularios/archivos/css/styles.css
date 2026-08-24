@@ -1,0 +1,79 @@
+:root{
+    --colorbase: rgba(21, 125, 251, 0.434);
+    --Barras: rgba(198, 220, 248, 0.599);
+    }
+
+body {background-color: rgb(162, 207, 245);}
+body .formulario{
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
+  margin: 0;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  height: 300px;
+  align-items: center;
+  background-color: var(--colorbase);
+  padding-top: 3rem;
+  margin-top: 3cap;
+  border-radius: 2cap;
+}
+
+.formulario input {background-color: var(--Barras);
+border-radius: 3rem;
+border-color: transparent;
+width: 300px;
+height: 30px;}
+
+body .formulario2{
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
+  margin: 0;
+}
+
+.formulario2 fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  background-color: var(--colorbase);
+ 
+  margin-top: 3cap;
+  border-radius: 2cap;
+  border-color: transparent;
+}
+
+.formulario2 input {background-color: var(--Barras);
+border-radius: 3rem;
+border-color: transparent;
+width: 300px;
+height: 30px;}
+
+
+.formulario3 { display: flex;
+  gap: 15px;
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  background-color: var(--colorbase);
+  border-radius: 2cap;
+  border-color: transparent;
+  margin-left: 18cap ;
+  margin-bottom: 25cap ;
+} 
+
+body .formulario3{
+  display: flex;
+  justify-content: center; 
+  align-items: center;          
+}
