@@ -60,7 +60,8 @@ width: 300px;
 height: 30px;}
 
 
-.formulario3 { display: flex;
+.formulario3 { 
+  display: flex;
   gap: 15px;
   width: 250px;
   height: 40px;
@@ -68,9 +69,7 @@ height: 30px;}
   background-color: var(--colorbase);
   border-radius: 2cap;
   border-color: transparent;
-  margin-left: 18cap ;
-  margin-bottom: 25cap ;
-} 
+}
 
 body .formulario3{
   display: flex;
