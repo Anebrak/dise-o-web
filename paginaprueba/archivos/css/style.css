@@ -1,0 +1,89 @@
+:root {
+  /* Marca principal (PlayStation Blue) */
+  --ps-blue-primary: #00439c;
+  --ps-blue-hover: #0056c7;
+  --ps-blue-glow: #0072ce;
+
+  /* Fondos (UI / Consola / Interfaz) */
+  --ps-bg-dark: #0f1015;        /* Fondo principal tipo PS5 / Dark Mode */
+  --ps-bg-surface: #181a21;     /* Tarjetas y contenedores */
+  --ps-bg-surface-light: #252834; /* Headers o modales */
+  --ps-bg-white: #f5f6f8;       /* Blanco característico del chasis de la PS5 */
+
+  /* Colores de los botones icónicos (Símbolos) */
+  --ps-triangle-green: #00f0aa; /* Triángulo */
+  --ps-circle-red: #ff3355;     /* Círculo */
+  --ps-cross-blue: #00aeff;     /* X (Cruz) */
+  --ps-square-pink: #ff66cc;    /* Cuadrado */
+
+  /* Textos */
+  --ps-text-primary: #ffffff;
+  --ps-text-secondary: #a0a5b5;
+  --ps-text-muted: #626875;
+
+  /* Bordes y Divisiones */
+  --ps-border: rgba(255, 255, 255, 0.1);
+  --ps-border-active: var(--ps-blue-glow);
+
+  /* Sombras y Resplandores (Efectos LED / Neon) */
+  --ps-glow-blue: 0 0 15px rgba(0, 114, 206, 0.6);
+  --ps-shadow-card: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+
+
+body { background-color: var(--ps-bg-white);
+margin-top: 8em;}
+
+.Barra nav {position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: var(--ps-blue-primary);
+    width: 100%;
+    align-items: center;
+    display:flex ;
+    justify-content: space-between;
+    height: 70px;
+    color: var(--ps-text-primary);}
+
+.Barra nav ul {list-style: none; 
+display: flex;
+gap :3em;
+text-align: center;
+padding: auto;
+
+}
+
+.cajainicio{background-image:url(../img/fondo.jpeg);
+text-align: center;
+margin: 10em 0;
+padding: 5em;
+width: 100%;
+color: var(--ps-text-primary);
+}
+
+.productos{text-align: center;}
+
+.caja {display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+
+.producto{background-color: var(--ps-bg-surface-light);
+color: var(--ps-text-primary);
+padding: 1em;
+flex-wrap: wrap;
+border-radius: 10%;
+margin: 0 1em;
+
+}
+
+.producto img {width: 200px;
+border-radius: 10%;}

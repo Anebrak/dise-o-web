@@ -1,0 +1,64 @@
+:root{--fondo:  rgb(5, 105, 148);
+
+
+}
+
+
+
+
+.pruebas ul{ list-style-position: outside;
+    list-style-type: decimal;
+
+             } 
+
+main {padding-top: 6em;}
+
+.barranavegacion nav {position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: var(--fondo);
+    width: 100%;
+    align-items: center;
+    display:flex ;
+    justify-content: space-between;
+    height: 70px;
+    color: antiquewhite;
+    transition: color 0.3s ease, transform 0.6s ease;
+}
+
+.barranavegacion ul :hover { color: rgb(16, 13, 43);
+                            transform: scale(1.1);}
+
+.barranavegacion ul {justify-content: flex-end;
+                    list-style: none;
+                    display: flex;
+                    gap: 3ch;
+                    padding-right: 3em;}
+
+.tablas {margin-top: 3cm;}
+
+.tablas table {margin-top: 2cm;}
+
+.a {border-collapse: collapse;
+    table-layout: fixed;
+    border-color: transparent;
+    }
+.a td { border-color: transparent ;
+border: solid;
+padding: 0.5em;
+text-align: center;
+background-color: rgb(136, 208, 250);}
+
+.a th {border-color: transparent ;
+border: solid;
+padding: 2ch;
+background-color: var(--fondo);
+}
+
+.b {border-collapse: separate;
+border-spacing: 2em;
+border: 2px solid #7569e2;
+padding: 10px;}
+
+
