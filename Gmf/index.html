@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GMFitness</title>
+    <link rel="stylesheet" href="archivos/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-        <header>
+    <header>
+        <section class="barranavegacion">
             <nav>
                 <h1>GMFitness</h1>
-                <ul>
-                    <li>Contacto</li>
-                    <li>Planes</li>
-                    <li>Testimonios</li>
-                </ul>
-                <button class="btn-secondary-lg-activate">Register</button>
-                <button class="btn-primary-md-activate">Login</button>
+                <div>
+                    <ul>
+                        <li>Contacto</li>
+                        <li>Planes</li>
+                        <li>Testimonios</li>
+                    </ul>
+                    <button class="btn-secondary-lg-activate">Register</button>
+                    <button class="btn-primary-md-activate">Login</button>
+                </div>
             </nav>
-        </header>
-        <main>
-            <section class="oferta">
-                <h1>Lo que ofrecemos</h1>
-                <div class="cajas-oferta">
+    </header>
+    <main>
+        <section class="oferta">
+            <h1>Lo que ofrecemos</h1>
+            <div class="cajas-oferta">
+                <div class="Derecha">
                     <article class="caja-of">
                         <i class="fa-solid fa-dumbbell"></i>
                         <h2>Rutinas personalizadas</h2>
@@ -33,6 +40,8 @@
                         <h2>Planes de dieta</h2>
                         <p>Nutrición basada en tus metas: volumen, definición o mantenimiento.</p>
                     </article>
+                </div>
+                <div class="izquierda">
                     <article class="caja-of">
                         <i class="fa-solid fa-chart-line"></i>
                         <h2>Seguimiento de progreso</h2>
@@ -44,107 +53,144 @@
                         <p>Organiza tu semana con recordatorios y estructura tu entrenamiento.</p>
                     </article>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="planes">
-                <h1>Planes</h1>
-                <h2>Empieza gratis, escala cuando quieras.</h2>
-                <div class="cajas-planes">
-                    <article class="gratis">
-                        <h3>Gratis</h3>
-                        <p>$0 /</p><p class="p-texto">siempre</p>
-                        <ul>
-                            <li>solo puede tener 2 dietas y rutinas activas al mismo tiempo.</li>
-                            <li>las rutinas y dietas solo muestran información básica</li>
-                            <li>solo puede editar su rutina o dieta 1 vez por semana</li>
-                            <li>usa plantillas fijas que solo se llenan con datos básicos.</li>
-                            <li>solo puede ver su rutina o dieta actual.</li>
-                        </ul>
-                        <button class="btn-secondary-lg-activate">Comeinza Gratis</button>
-                    </article>
-                    <article class="gratis">
-                        <h3>Gratis</h3>
-                        <p>$0 /</p><p class="p-texto">siempre</p>
-                        <ul>
-                            <li>dietas y rutinas ilimitadas</li>
-                            <li>personalización avanzada (progresión de peso, descansos, macros por comida, sustituciones de alimentos).</li>
-                            <li>puede editar y regenerar sus rutinas y dietas las veces que quiera.</li>
-                            <li>el sistema ajusta automáticamente la dieta y rutina según su progreso real.</li>
-                            <li>tiene acceso a todo su historial y gráficas de evolución.</li>
-                        </ul>
-                        <button class="btn-primary-md-activate">Optener premiun</button>
-                    </article>
+        <section class="planes">
+            <h1>Planes</h1>
+            <h2>Empieza gratis, escala cuando quieras.</h2>
+            <div class="cajas-planes">
+                <article class="gratis">
+                    <h3>Gratis</h3>
+                    <p>$0 /</p>
+                    <p class="p-texto">siempre</p>
+                    <ul>
+                        <li>solo puede tener 2 dietas y rutinas activas al mismo tiempo.</li>
+                        <li>las rutinas y dietas solo muestran información básica</li>
+                        <li>solo puede editar su rutina o dieta 1 vez por semana</li>
+                        <li>usa plantillas fijas que solo se llenan con datos básicos.</li>
+                        <li>solo puede ver su rutina o dieta actual.</li>
+                    </ul>
+                    <button class="btn-secondary-lg-activate">Comeinza Gratis</button>
+                </article>
+                <article class="gratis">
+                    <h3>Gratis</h3>
+                    <p>$0 /</p>
+                    <p class="p-texto">siempre</p>
+                    <ul>
+                        <li>dietas y rutinas ilimitadas</li>
+                        <li>personalización avanzada (progresión de peso, descansos, macros por comida, sustituciones de
+                            alimentos).</li>
+                        <li>puede editar y regenerar sus rutinas y dietas las veces que quiera.</li>
+                        <li>el sistema ajusta automáticamente la dieta y rutina según su progreso real.</li>
+                        <li>tiene acceso a todo su historial y gráficas de evolución.</li>
+                    </ul>
+                    <button class="btn-primary-md-activate">Optener premiun</button>
+                </article>
 
-                </div>
-            </section>
-            <section class="Testimonios">
-                <h1>Testimonios</h1>
-                <h2>Lo que dicen nuestros usuarios</h2>
-                <div class="cajas-testimonios">
+            </div>
+        </section>
+        <section class="Testimonios">
+            <h1>Testimonios</h1>
+            <h2>Lo que dicen nuestros usuarios</h2>
+            <div class="cajas-testimonios">
+                <article class="caja-test">
+                    <ul style="list-style-type: '★ ';">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>"Llevo 3 meses usando la app y bajé 9 kilos siguiendo las rutinas y los planes de dieta.
+                        Todo está muy bien explicado, incluso para alguien que nunca había entrenado."</p>
+                    <div class="Recuadro-usu">
+                        <h1>DM</h1>
+                    </div>
                     <article class="caja-test">
-                        <ul  style="list-style-type: '★ ';">
+                        <ul style="list-style-type: '★ ';">
                             <li></li>
                             <li></li>
                             <li></li>
                             <li></li>
                             <li></li>
                         </ul>
-                        <p>"Llevo 3 meses usando la app y bajé 9 kilos siguiendo las rutinas y los planes de dieta.
- Todo está muy bien explicado, incluso para alguien que nunca había entrenado."</p>
-                        <div class="Recuadro-usu">
-                            <h1>DM</h1>
-                        </div>
-                        <article class="caja-test">
-                        <ul  style="list-style-type: '★ ';">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <p>"Me encanta que puedo planificar toda mi semana desde la computadora. Las dietas están muy completas y se adaptan a lo que tengo en casa. 100% recomendada."</p>
+                        <p>"Me encanta que puedo planificar toda mi semana desde la computadora. Las dietas están muy
+                            completas y se adaptan a lo que tengo en casa. 100% recomendada."</p>
                         <div class="Recuadro-usu">
                             <h1>SR</h1>
                         </div>
                         <article class="caja-test">
-                        <ul  style="list-style-type: '★ ';">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <p>"Lo que más me gusta es que las rutinas explican bien cada ejercicio y puedes ajustar la dificultad según cómo te sientas ese día. Llevo 2 meses y ya no me imagino entrenar sin la app."</p>
-                        <div class="Recuadro-usu">
-                            <h1>BR</h1>
-                        </div>
-                        <article class="caja-test">
-                        <ul  style="list-style-type: '★ ';">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <p>"Probé muchas apps de fitness pero ninguna me convencía. Esta es diferente porque puedes verlo todo en pantalla grande y organizarte mejor. Las dietas son variadas y ricas, no ese típico pollo con arroz de siempre."</p>
-                        <div class="Recuadro-usu">
-                            <h1>MD</h1>
-                        </div>
+                            <ul style="list-style-type: '★ ';">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <p>"Lo que más me gusta es que las rutinas explican bien cada ejercicio y puedes ajustar la
+                                dificultad según cómo te sientas ese día. Llevo 2 meses y ya no me imagino entrenar sin
+                                la app."</p>
+                            <div class="Recuadro-usu">
+                                <h1>BR</h1>
+                            </div>
+                            <article class="caja-test">
+                                <ul style="list-style-type: '★ ';">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <p>"Probé muchas apps de fitness pero ninguna me convencía. Esta es diferente porque
+                                    puedes verlo todo en pantalla grande y organizarte mejor. Las dietas son variadas y
+                                    ricas, no ese típico pollo con arroz de siempre."</p>
+                                <div class="Recuadro-usu">
+                                    <h1>MD</h1>
+                                </div>
 
 
-                    </article>
+                            </article>
 
-                    </article>
-                </div>
-            </section>
+                        </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="titulos">
+            <h1>GMFitness</h1>
+            <h2>Contacto</h2>
+            <h3>Descarga la app</h3>
+        </div>
+        <div class="redes sociales">
+            <ul>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-tiktok"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+            </ul>
+        </div>
+        <div class="contac-footer">
+            <ul>
+                <li><i class="fa-regular fa-envelope"></i>GMF@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i>+(57) 301 190 1911</li>
+                <li><i class="fa-solid fa-magnifying-glass-location"></i>Caldas, Antioquia</li>
+            </ul>
+        </div>
+        <div class="Descargas">
+            <article class="caja-descarga">
+                <i class="fa-brands fa-apple"></i>
+                <p>Disponible en</p>
+                <h2>App Store</h2>
+            </article>
+            <article class="caja-descarga">
+                <i class="fa-brands fa-google-play"></i>
+                <p>Disponible en</p>
+                <h2>Play Store</h2>
+            </article>
+        </div>
+    </footer>
 
-
-        </main>
-        <footer>
-
-
-
-        </footer>
-    
 </body>
+
 </html>
