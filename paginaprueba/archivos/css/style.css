@@ -30,10 +30,12 @@
   --ps-shadow-card: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-
+* {box-sizing: border-box;}
 
 body { background-color: var(--ps-bg-white);
-margin-top: 8em;}
+margin-top: 10em;
+margin: 0;
+}
 
 .Barra nav {position: fixed;
     top: 0;
@@ -57,21 +59,25 @@ padding: auto;
 
 .cajainicio{background-image:url(../img/fondo.jpeg);
 text-align: center;
-margin: 10em 0;
-padding: 5em;
+padding: 8em;
 width: 100%;
 color: var(--ps-text-primary);
+margin-top: 4em;
+background-size: 900px;
 }
+
+.cajainicio h2 {font-size: 10ch;}
+.cajainicio p {font-size: 4ch;}
 
 .productos{text-align: center;}
 
-.caja {display: flex;
-    justify-content: space-between;
+.cajaproduct {display: flex;
     margin-top: 1em;
     text-align: center;
     justify-content: space-around;
     align-items: center;
-
+    max-width: 100%;
+    overflow: hidden;
     
 }
 
@@ -82,8 +88,44 @@ padding: 1em;
 flex-wrap: wrap;
 border-radius: 10%;
 margin: 0 1em;
-
+padding: 60px 35px ;
+display: block ;
 }
 
 .producto img {width: 200px;
 border-radius: 10%;}
+
+.producto figcaption {font-size: 3ch;
+font-style: strong;
+margin-top: 1em;}
+
+.botoninicio{border-radius: 1;
+border-color: var(--ps-triangle-green);
+background-color: transparent;
+color: var(--ps-triangle-green);
+padding: 1em;
+font-size: 2ch;}
+
+.producto button{
+    align-items: flex-end;
+}
+.bt-1{border-radius: 1;
+border-color: var(--ps-circle-red);
+background-color: transparent;
+color: var(--ps-circle-red);
+padding: 1em 2em;
+font-size: 2ch;}
+
+.bt-2{border-radius: 1;
+border-color: var(--ps-square-pink);
+background-color: transparent;
+color: var(--ps-square-pink);
+padding: 1em 2em;
+font-size: 2ch;}
+
+.bt-3{border-radius: 1;
+border-color: var(--ps-cross-blue);
+background-color: transparent;
+color: var(--ps-cross-blue);
+padding: 1em 2em;
+font-size: 2ch;}
