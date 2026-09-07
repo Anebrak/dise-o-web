@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft</title>
     <link rel="stylesheet" href="archivos/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,39 +20,116 @@
                 <li>APRENDER</li>
                 <li>SOPORTE</li>
             </ul>
-            <ul class="ul-2"> 
+            <ul class="ul-2">
                 <li><button class="boton-verde">Compra Ahora <p>></p> </button></li>
                 <div>
-                <li><button>🔎 <p>></p></button></li>
-                <li><button>Cuenta<p>></p></button></li>
+                    <li><button>🔎 <p>></p></button></li>
+                    <li><button>Cuenta<p>></p></button></li>
                 </div>
             </ul>
         </nav>
     </header>
     <main>
         <section class="fondos">
-           <div class="fondo">
-            <img src="archivos/img/fondo1.webp" alt="fondo1">
-           </div>
-           <div class="cajas">
-                <div class="cabeza">
-                    <div>
-                        <div class="bloque-oscuro" style="grid-area: cabe;"></div>
-                        <div class="bloque-transparente" style="grid-area: cab;"></div>
+            <div class="fondo">
+                <img id="imgFondo" class="imagenFondo" src="archivos/img/fondo1.webp" alt="fondo1">
+            </div>
+            <div class="cajas">
+                <div class="textosFondo">
+                    <div class="texto-fondo activo">
+                        <h2>¡Resérvalo ya!</h2>
+                        <p>Entra en una nueva dimensión en Minecraft Dungeons II! Atrévete con Sift y enfréntate a
+                            amenazas desconocidas que te pondrán a prueba como nunca antes.</p>
+                        <button>RESERVAR ></button>
+                    </div>
+                    <div class="texto-fondo">
+                        <h2>La Capa del héroe</h2>
+                        <p>¡Juega a Minecraft Dungeons I y II con la misma cuenta de Microsoft para conseguir la capa en
+                            Dungeons II y en Minecraft: Java y Bedrock Edition!*
+                        </p>
+                        <button>Obten más información></button>
+                    </div>
+                    <div class="texto-fondo">
+                        <h2>Juega a Chaos Cubed</h2>
+                        <p>Explora un sorprende bioma espeleológico, crea bloques de colores y da rienda suelta al caos
+                            desatado por lo bloques y al extraño cubo de azufre. ¡Juega hoy mismo!</p>
+                        <button>Consulta la actulización del juego ></button>
                     </div>
                 </div>
-                <div class="textos-fondo">
-                    <h2>¡Resérvalo ya!</h2>
-                    <p>Entra en una nueva dimensión en Minecraft Dungeons II! Atrévete con Sift y enfréntate a amenazas desconocidas que te pondrán a prueba como nunca antes.</p>
-                    <button>RESERVAR ></button>
-                </div>
-                    <button class="btn-fondo1" >Fondo 1</button>
-                    <button class="btn-fondo2" >Fondo 2</button>
-                    <button class="btn-fondo3" >Fondo 3</button>
+                <button class="btn-fondo1"></button>
+                <button class="btn-fondo2"></button>
+                <button class="btn-fondo3"></button>
+                <div class="bloque-oscuro"></div>
             </div>
-            
+            </div>
+            <script src="archivos/js/scripts.js" defer></script>
 
-        </section>
+
+            <section class="juegos">
+                <h1>DESCUBRE NUESTROS JUEGOS</h1>
+
+                <div class="contenedor-juegos">
+                    <div class="juego">
+                        <img src="archivos/img/minecraft-java.jpg" alt="minecraft-java">
+                        <h3>Minecraft</h3>
+                        <p>Sandbox de supervivencia, aventura<br>
+                            Un solo jugador + multijugador</p>
+                        <ul>
+                            <li><i class="fa-brands fa-steam"></i></li>
+                            <li><i class="fa-brands fa-playstation"></i></li>
+                            <li><i class="fa-brands fa-xbox"></i></li>
+                            <li><i class="fa-brands fa-windows"></i></li>
+                            <li><i class="fa-brands fa-linux"></i></li>
+                            <li><i class="fa-brands fa-android"></i></li>
+                        </ul>
+                    </div>
+                    <div class="juego">
+                        <img src="archivos/img/minecraft-dungeons.jpg" alt="dungeons">
+                        <h3> Minecraft Dungeons II</h3>
+                        <p>Sandbox de supervivencia, aventura<br>
+                            Un solo jugador + multijugador</p>
+                        <ul>
+                            <li><i class="fa-brands fa-steam"></i></li>
+                            <li><i class="fa-brands fa-playstation"></i></li>
+                            <li><i class="fa-brands fa-xbox"></i></li>
+                            <li><i class="fa-brands fa-windows"></i></li>
+                        </ul>
+                    </div>
+                    <div class="juego">
+                        <img src="archivos/img/minecraft-dungeons(2).webp" alt="minecraft-java">
+                        <h3>Minecraft Dungeons</h3>
+                        <p>Exploración de mazmorras, RPG de acción
+                            Un solo jugador + Multijugador</p>
+                        <ul>
+                            <li><i class="fa-brands fa-steam"></i></li>
+                            <li><i class="fa-brands fa-playstation"></i></li>
+                            <li><i class="fa-brands fa-xbox"></i></li>
+                            <li><i class="fa-brands fa-windows"></i></li>
+                        </ul>
+
+                    </div>
+                    <div class="juego">
+                        <img src="archivos/img/minecraft-legends.webp" alt="minecraft-java">
+                        <h3>Minecraft Legends</h3>
+                        <p>RPG de acción, estrategia
+                            Un solo jugador + multijugador</p>
+                        <ul>
+                            <li><i class="fa-brands fa-steam"></i></li>
+                            <li><i class="fa-brands fa-playstation"></i></li>
+                            <li><i class="fa-brands fa-xbox"></i></li>
+                            <li><i class="fa-brands fa-windows"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+
+            </section class="dungeons-2">
+                <img src="archivos/img/dungeon-2.webp" alt="dungeon">
+                <h1>ENFRÉNTATE A LO DESCONOCIDO</h1>
+                <p>¡Reserva Minecraft Dungeons II hoy mismo y consigue 2 aspectos de héroe adicionales, la capa perversa y la mascota de pollo perverso!</p>
+                <button>RESERVAR DUNGEONS II > </button>
+            </section>
 
 
     </main>
@@ -58,6 +138,7 @@
 
 
     </footer>
-    
+
 </body>
+
 </html>
