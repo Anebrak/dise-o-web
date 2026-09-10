@@ -21,6 +21,9 @@
     btn1.addEventListener('click', () => {
       imgFondo.src = 'archivos/img/fondo1.webp';
       cambiarTextoActivo(0);
+      btn1.style.borderStyle = 'solid';
+      btn2.style.borderStyle = 'hidden';
+      btn3.style.borderStyle = 'hidden';
     });
   
  
@@ -28,6 +31,9 @@
     btn2.addEventListener('click', () => {
       imgFondo.src = 'archivos/img/fondo2.jpg';
       cambiarTextoActivo(1);
+      btn1.style.borderStyle = 'hidden';
+      btn2.style.borderStyle = 'solid';
+      btn3.style.borderStyle = 'hidden';
     });
   
 
@@ -36,5 +42,8 @@
     btn3.addEventListener('click', () => {
       imgFondo.src = 'archivos/img/fondo3.webp';
       cambiarTextoActivo(2);
+      btn1.style.borderStyle = 'hidden';
+      btn2.style.borderStyle = 'hidden';
+      btn3.style.borderStyle = 'solid';
     });
 
