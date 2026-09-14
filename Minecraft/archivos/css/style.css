@@ -137,11 +137,13 @@
     --mc-default-caution: #e2b923;
     --mc-default-warning: #ca3636;
     --mc-default-warning-2: #ff605e;
+    --mc-default--fontlist: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @font-face {
   font-family: 'Minecraft';
   src: url(../fonts/MinecraftRegular-Bmg3.otf);
 }
+
 
 
 *{box-sizing: border-box;}
@@ -188,10 +190,12 @@ width: 230px;}
 grid-column: 2/3;
 font-size: 1.7ch;
 align-content: center;
-font-family: 'Minecraft' ;
-gap: 0px;
+gap: 30px;
 text-align: left;
+
 }
+.ul-1 li button samp {font-family: var(--mc-default--fontlist);}
+
 .ul-1 li button i{margin-left:10px;}
   
 #boton-verde {
@@ -209,7 +213,8 @@ text-align: left;
   background-color: transparent;
   border-style: none;
   color:  var(--mc-core-white);
-  width: 140px;
+  width: auto;
+  
 }
     
 .ul-2 li button{
@@ -262,6 +267,25 @@ object-fit: contain ;
   transform: translateY(0);
 }
 
+
+#navbars2 {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 999; 
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.8s ease, transform 1s ease, visibility 0.8s;
+}
+
+#navbars2.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
 body.no-scroll {
   overflow: hidden;
 }
@@ -279,7 +303,7 @@ background-color: var(--mc-core-off-black);}
 
 .caja-navbar-botones{
 
-grid-row: 1/3;
+grid-row: 1/4;
 grid-column: 1/4 ;
 display: flex;
 flex-direction: column;
@@ -288,7 +312,7 @@ margin-top: 4em;
 }
 .btn-bar-on{
 color: var(--mc-core-white);
-height: 100px;
+height: 60px;
 width: 250px;
 font-size: 2ch;
 text-align: left;
@@ -303,7 +327,7 @@ font-family: 'Minecraft';
 }
 .btn-bar-off{
 color: var(--mc-core-white);
-height: 100px;
+height: 60px;
 width: 250px;
 font-size: 2ch;
 text-align: left;
@@ -320,7 +344,7 @@ font-family: 'Minecraft';
 .cajas-navbar {
 grid-column: 4/11 ;
 grid-row: 1/5 ;
-padding: 50px 40px 40px 80px;}
+padding: 50px 100px 40px 100px;}
 
 .caja-navbar {
 display: grid;
@@ -369,6 +393,9 @@ grid-row: 3/4;}
 #t-3 {grid-column: 6/8;
 grid-row: 3/4;}
 
+#t-1 p {font-size: 1.5ch;}
+#t-2 p {font-size: 1.5ch;}
+#t-3 p {font-size: 1.5ch;}
 
 /***************************************
              Enlaces NAVBAR
@@ -385,7 +412,8 @@ border-color: transparent;
 border-bottom: var(--mc-core-grey-5);
 border-style: solid;
 border-width: 2px;
-padding-bottom: 5px;}
+padding-bottom: 5px;
+font-size: 1.5ch;}
 
 .enlaces-navbar2 {grid-column: 1/3;
 grid-row: 4/5 ;
@@ -395,6 +423,7 @@ border-top: var(--mc-core-green-4);
 border-style: solid;
 padding-top: 10px;
 width: 150px;
+font-size: 1.4ch;
 } 
 
 
@@ -708,7 +737,7 @@ font-size: 7ch;
 
 #videos {display: grid;
 grid-template-columns: 170px 1.5fr repeat(4, 1fr) 70px;
-grid-template-rows: 150px repeat(4, 1fr) 100px 200px;
+grid-template-rows: 150px repeat(4, 1fr) 130px 200px;
 background-color: var(--mc-core-rich-black);
 row-gap: 0;}
 
@@ -818,7 +847,7 @@ border-style:solid ;
 margin: 0;
 }
 
-#videos-texto p {font-size: 2.5ch;
+#videos-texto p {font-size: 2ch;
 width: 70%;}
 
 #noticias {background-color: var(--mc-core-grey-6);
