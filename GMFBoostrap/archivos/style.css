@@ -1,0 +1,68 @@
+:root {
+    --azul-secundario: #1E223E;
+    --azul-oscuro: #0F111F;
+    --azul-fondo-iconos: #262B4E;
+    --naranja: #FE6C05;
+    --borde-naranja: #803605;
+    --blanco-primario: #ffffff;
+    --gris-inactivo: #9699AE;
+    --negro: #000000;
+    --gris-bordes:#505578;
+}
+
+body {background-color: var(--azul-oscuro);}
+
+.boton-naranja-md{
+    background-color: var(--naranja);
+    border-color: var(--borde-naranja);
+    color: var(--negro);
+    font-size: 1.7ch;
+    font-weight: bold;
+    margin-right: 30px;
+    width: 100px; }
+
+.boton-naranja-md:hover{
+    background-color: var(--borde-naranja);
+    border-color: var(--negro);
+    color: var(--blanco-primario);
+    font-size: 1.8ch;
+    font-weight: bold;}
+    
+
+
+.boton-gris-md{color: var(--gris-inactivo);
+    background-color: transparent;
+    border-style: solid; 
+    border-color: var(--gris-inactivo);
+    width: 100px; 
+}
+.boton-gris-md:hover{
+    background-color: var(--negro);
+    border-color: var(--gris-inactivo);
+    color: var(--blanco-primario);
+    font-size: 1.8ch;
+    font-weight: bold;}
+
+.nav-gmf {
+background-color: var(--azul-secundario);
+height: 80px;
+}
+
+.nav-gmf-items{color: var(--gris-inactivo);}
+
+.nav-gmf-items:hover{color: var(--blanco-primario);
+font-size: 2ch;}
+
+.dropdown-gmf {background-color: var(--azul-secundario);
+border-color: var(--azul-fondo-iconos);
+border-style: solid;
+border-width: 3px;}
+
+.nav-gmf-item{color: var(--gris-inactivo);}
+
+.nav-gmf-item:hover{
+color: var(--blanco-primario);
+background-color: var(--azul-fondo-iconos);}
+ 
+
+
