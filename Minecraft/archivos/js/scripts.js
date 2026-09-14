@@ -16,7 +16,6 @@
     }
   }
 
-
  
     btn1.addEventListener('click', () => {
       imgFondo.src = 'archivos/img/fondo1.webp';

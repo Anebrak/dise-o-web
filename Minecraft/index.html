@@ -12,84 +12,91 @@
 <body>
     <header>
         <nav>
-            <img src="archivos/img/Logo.svg" alt="Logo-minecraft">
+            <img id="img-nav" src="archivos/img/Logo.svg" alt="Logo-minecraft">
             <ul class="ul-1">
-                <li>JUEGOS</li>
-                <li>TIENDA</li>
-                <li>EXPLORACION</li>
-                <li>APRENDER</li>
-                <li>SOPORTE</li>
+                <li><button id="btn-ul-1">JUEGOS<i class="fa-solid fa-angle-down"></i></li>
+                <li><button id="btn-ul-2">TIENDA<i class="fa-solid fa-angle-down"></i></li>
+                <li><button id="btn-ul-3">EXPLORACION<i class="fa-solid fa-angle-down"></i></li>
+                <li><button id="btn-ul-4">APRENDER<i class="fa-solid fa-angle-down"></i></button></li>
+                <li><button id="btn-ul-5">SOPORTE<i class="fa-solid fa-angle-down"></i></li>
+
             </ul>
             <ul class="ul-2">
-                <li><button class="boton-verde">Compra Ahora <p>></p> </button></li>
-                <div>
-                    <li><button>🔎 <p>></p></button></li>
-                    <li><button>Cuenta<p>></p></button></li>
-                </div>
+                <li><button id="boton-verde">Compra Ahora</button></li>
+                <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                <li><i class="fa-pixel fa-regular fa-user"></i><button>Cuenta</button></li>
             </ul>
         </nav>
-        <div class="navbar">
-            <div class="caja-navbar-botones">
-                <button class="btn-bar">Empieza aqui</button>
-                <button class="btn-bar">Enlaces utiles</button>
-                <button class="btn-bar">Oportunidades de empleo</button>
-            </div>
-       
-            <div class="cajas-navbar">
-                <div class="caja-navbar">
-                    <div class="img-nav1">
-                        <img  src="archivos/img/navbar/navbar-img1.avif" alt="img-1">
-                        <h4>Consejos para principiantes</h4> <br>
-                        <p>¿No estás familiarizado con Minecraft?</p>
+        <section id=navbars>
+            <div class="navbar">
+                <div class="caja-navbar-botones">
+                    <button class="btn-bar-on">Empieza aqui</button>
+                    <button class="btn-bar-off">Enlaces utiles</button>
+                    <button class="btn-bar-off">Oportunidades de empleo</button>
+                </div>
+
+                <div class="cajas-navbar">
+                    <div class="caja-navbar">
+
+                        <img class="img-nav1" src="archivos/img/navbar/navbar-img1.avif" alt="img-1">
+
+                        <div id="t-1">
+                            <h4>Consejos para principiantes</h4>
+                            <p>¿No estás familiarizado con Minecraft?</p>
+                        </div>
+
+
+                        <img class="img-nav2" src="archivos/img/navbar/navbar-img2.jpg" alt="img-2">
+
+                        <div id="t-2">
+                            <h4>Probar Minecraft gratis</h4>
+                            <p>¡Empieza una prueba gratuita!</p>
+                        </div>
+
+                        <img class="img-nav3" src="archivos/img/navbar/navbar-img3.jpg" alt="img-3">
+
+                        <div id="t-3">
+                            <h4>Juega en compañía</h4>
+                            <p>Descubre cómo jugar a Minecraft a tu manera con amigos.</p>
+                        </div>
                     </div>
-                    <div class="img-nav2">
-                        <img  src="archivos/img/navbar/navbar-img2.jpg" alt="img-2">
-                        <h4>Probar Minecraft gratis</h4> <br>
-                        <p>¡Empieza una prueba gratuita!</p>
-                    </div>
-                    <div class="img-nav3" >
-                        <img src="archivos/img/navbar/navbar-img3.jpg" alt="img-3">
-                    </div>
-                    <h4>Juega en compañía</h4><br>
-                    <p>Descubre cómo jugar a Minecraft a tu manera con amigos.</p>
                 </div>
                 <div class="enlaces-navbar">
-                    <a>Guias del juego</a>
-                    <a>Tutoriales de Realms</a>
+                    <p>Guias del juego</p>
+                    <p>Tutoriales de Realms</p>
                 </div>
                 <div class="enlaces-navbar2">
-                    <a>Soporte tecnico</a>
-                    <a>Creditos</a>
+                    <p>Soporte tecnico</p>
+                    <p>Creditos</p>
                 </div>
+            </div>
+        </section>
+        <script src="archivos/js/navbar.js"></script>
 
-
-        </div>
     </header>
     <main>
         <section class="fondos">
-            <div class="fondo">
-                <img id="imgFondo" class="imagenFondo" src="archivos/img/fondo1.webp" alt="fondo1">
-            </div>
             <div class="cajas">
+                <img id="imgFondo" class="imagenFondo" src="archivos/img/fondo1.webp" alt="fondo1">
                 <div class="textosFondo">
                     <div class="texto-fondo activo">
                         <h2>¡Resérvalo ya!</h2>
                         <p>Entra en una nueva dimensión en Minecraft Dungeons II! Atrévete con Sift y enfréntate a
                             amenazas desconocidas que te pondrán a prueba como nunca antes.</p>
-                        <button>RESERVAR ></button>
+                        <button class="btn-verde">RESERVAR <i class="fa-solid fa-angle-right"></i> </button>
                     </div>
                     <div class="texto-fondo">
                         <h2>La Capa del héroe</h2>
                         <p>¡Juega a Minecraft Dungeons I y II con la misma cuenta de Microsoft para conseguir la capa en
                             Dungeons II y en Minecraft: Java y Bedrock Edition!*
                         </p>
-                        <button>Obten más información></button>
+                        <button class="btn-verde">Obten más información <i class="fa-solid fa-angle-right"></i> </button>
                     </div>
                     <div class="texto-fondo">
                         <h2>Juega a Chaos Cubed</h2>
                         <p>Explora un sorprende bioma espeleológico, crea bloques de colores y da rienda suelta al caos
                             desatado por lo bloques y al extraño cubo de azufre. ¡Juega hoy mismo!</p>
-                        <button>Consulta la actulización del juego ></button>
+                        <button class="btn-verde">Consulta la actulización del juego <i class="fa-solid fa-angle-right"></i> </button>
                     </div>
                 </div>
                 <button class="btn-fondo1"></button>
@@ -148,7 +155,7 @@
                     <img src="archivos/img/minecraft-legends.webp" alt="minecraft-java">
                     <h3>Minecraft Legends</h3>
                     <p>RPG de acción, estrategia
-                        Un solo jugador + multijugador</p>
+                        Un solo jugador + multijugador, juega junto a tus amigos</p>
                     <ul>
                         <li><i class="fa-brands fa-steam"></i></li>
                         <li><i class="fa-brands fa-playstation"></i></li>
@@ -187,6 +194,122 @@
             </div>
         </section>
 
+        <section class="Novedad2">
+            <div id="textos-novedad2">
+                <h1>COMPLEMENTOS <br>DEL <br>MARKETPLACE</h1>
+                <p>¡Ahora hay incluso más formas de cambiar el juego de Bedrock a tu manera! Explora los nuevos
+                    complementos de pago y gratis en el Marketplace de Minecraft hoy.</p>
+                <button class="btn1">EXPLORA EL MARKETPLACE <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="botones-mover">
+                <button class="btn-flecha"><i class="fa-solid fa-arrow-left-long"></i></button>
+                <button class="btn-flecha"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <div id="carrucel">
+                <img class="imagen-ntlp2" src="archivos/img/NoPierdas.jpg" alt="no te lo pierdas">
+                <img class="imagen-ntlp2" src="archivos/img/NoPierdas.jpg" alt="no te lo pierdas">
+                <img class="imagen-ntlp2" src="archivos/img/NoPierdas.jpg" alt="no te lo pierdas">
+                <img class="imagen-ntlp2" src="archivos/img/NoPierdas.jpg" alt="no te lo pierdas">
+                <img class="imagen-ntlp2" src="archivos/img/NoPierdas.jpg" alt="no te lo pierdas">
+            </div>
+        </section>
+        <section id="videos">
+            <h1>TRAILERS DE LA EXPERIENCIA DEL JUEGO</h1>
+            <div id="botones-videos">
+                <button class="boton-video-ON">
+                    <img src="archivos/img/videos/bloquetierra.png" alt="bloque de tierra"> 
+                    <samp>Minecraft</samp>
+                </button>
+                <button class="boton-video-OFF">
+                    <img src="archivos/img/videos/fantasma.avif" alt="fantasma">
+                    <samp>Minecraft Dungeons II</samp>
+                </button>
+                <button class="boton-video-OFF">
+                    <img src="archivos/img/videos/bloquerojo.png" alt="fantasma">
+                    <samp>Minecraft Dungeons</samp>
+                </button>
+                <button class="boton-video-OFF">
+                    <img src="archivos/img/videos/bloqueazul.webp" alt="bloqueazul">
+                    <samp>Minecraft Legends</samp>
+                </button>
+                <button class="boton-video-OFF">
+                    <img src="archivos/img/videos/libreria.avif"alt="libreria">
+                    <samp>Minecraft Education</samp>
+                </button>
+            </div>
+            <div id="video">
+                <video src="archivos/img/videos/minecraft.mp4" autoplay loop muted></video>
+            </div>
+            <div id="videos-texto">
+                <p>¡Explora tus propios mundos únicos, sobrevive a la noche y crea todo lo que puedas imaginar! <br><br>
+                Ve el anterior vídeo de muestra de la experiencia del juego de Minecraft o selecciona "ver el tráiler" para mirar el vídeo completo en YouTube.</p>
+                <button class="btn-verde">OBTENER MINECRAFT <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+        </section>
+
+        <section id="noticias">
+            <h1>NOTICIAS MAS FRECUENTES</h1>
+            <div id="contenedor-noticias">
+                <div class="caja-noticias">
+                    <img src="archivos/img/novedad/novedad (1).avif" alt="novedad1">
+                    <div class="texto">
+                        <h2>Marketplace</h2>
+                        <p>VAMOS A JUGAR: ETERNAL CAVES</p>
+                    </div>
+                </div>
+                <div class="caja-noticias">
+                    <img src="archivos/img/novedad/novedad (2).webp" alt="novedad2">
+                    <div class="texto">
+                        <h2>NEWS</h2>
+                        <p>Minecraft 26.3 Pre-Release 3</p>
+                    </div>
+                </div>
+                <div class="caja-noticias">
+                    <img src="archivos/img/novedad/novedad (3).avif" alt="noveda3">
+                    <div class="texto">
+                        <h2>NEWS</h2>
+                        <p>Cliam an in-game item with the Treasure Hunt watch challenge!</p>
+                    </div>
+                </div>
+                <div class="caja-noticias">
+                    <img src="archivos/img/novedad/novedad (4).avif" alt="noveda3">
+                    <div class="texto">
+                        <h2>NEWS</h2>
+                        <p>Minecraft 26.3 Pre-Release 2</p>
+                    </div>
+                </div>
+                <div class="caja-noticias">
+                    <img src="archivos/img/novedad/novedad (5).webp" alt="noveda3">
+                    <div class="texto">
+                        <h2>News</h2>
+                        <p>New Realms features in Java snapshot</p>
+                    </div>
+                </div>
+                <div class="caja-noticias">
+                    <img src="archivos/img/novedad/novedad (6).avif" alt="noveda3">
+                    <div class="texto">
+                        <h2>News</h2>
+                        <p>Changes are coming to minecoins for nintendo</p>
+                    </div>
+                </div>
+                <div class="caja-noticias">
+                    <img src="archivos/img/novedad/novedad (7).jpg" alt="noveda3">
+                    <div class="texto">
+                        <h2>NEWS</h2>
+                        <p>Minecraft 26.3 Pre-Release 1</p>
+                    </div>
+                </div>
+                <div class="caja-noticias">
+                    <img src="archivos/img/novedad/novedad (8).webp" alt="noveda3">
+                    <div class="texto">
+                        <h2>NEWS</h2>
+                        <p>Minecraft 26.3 snapshot 10</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
     <footer>
