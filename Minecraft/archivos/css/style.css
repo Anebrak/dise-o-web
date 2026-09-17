@@ -150,6 +150,7 @@
 
 
 *{box-sizing: border-box;}
+*{box-sizing: border-box;}
 
 /***************************************
                   NAV
@@ -1186,3 +1187,424 @@ padding: 10px;
 border-radius: 100%;
 align-self: center;
 justify-self: center;}
+
+/*=======================================================================
+  RESPONSIVE / MEDIA QUERIES
+  Añadido para que el sitio se adapte a tablets y móviles.
+  Los estilos de arriba están pensados para escritorio (>1200px);
+  aquí se van "apilando" las cuadrículas fijas en columnas simples
+  a medida que se reduce el ancho de pantalla.
+=========================================================================*/
+
+/* ---------- Ajustes generales fluidos (aplican siempre) ---------- */
+img { max-width: 100%; height: auto; }
+
+.contenedor-dungeon img,
+.caja-navbar img,
+#superior img { height: auto; }
+
+/* =========================================================
+   1. Breakpoint grande: laptops pequeñas / tablets grandes
+   ========================================================= */
+@media (max-width: 1200px) {
+
+  .Novedad2,
+  .coleccionables {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #textos-novedad2,
+  #textos-coleccionables {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .Novedad2 div,
+  .coleccionables div,
+  #textos-novedad2,
+  #textos-coleccionables {
+    width: auto;
+  }
+
+  .Novedad2 p,
+  .coleccionables p,
+  #textos-coleccionables p {
+    width: auto;
+    max-width: 90%;
+  }
+
+  #contenedor-enterate {
+    width: 70%;
+  }
+
+  .Novedad {
+    padding-left: 6em;
+    gap: 40px;
+  }
+
+  .Novedad div {
+    width: auto;
+    max-width: 500px;
+  }
+
+  .Novedad p {
+    width: auto;
+    max-width: 400px;
+  }
+}
+
+/* =========================================================
+   2. Tablets (≤ 992px)
+   ========================================================= */
+@media (max-width: 992px) {
+
+  /* --- Header / nav principal --- */
+  header nav {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  header nav img { width: 170px; }
+
+  .ul-1 {
+    display: none; /* se recomienda mostrar vía menú hamburguesa en el HTML/JS */
+  }
+
+  .ul-2 {
+    grid-column: 2/3;
+    gap: 10px;
+  }
+
+  /* --- Navbar desplegable --- */
+  .navbar {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 3em;
+  }
+
+  .caja-navbar-botones {
+    grid-column: 1/-1;
+    grid-row: auto;
+    margin: 1.5em;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .btn-bar,
+  .btn-bar.activo {
+    width: auto;
+    flex: 1 1 200px;
+  }
+
+  .cajas-navbar {
+    grid-column: 1/-1;
+    grid-row: auto;
+    padding: 20px 30px 40px 30px;
+  }
+
+  .caja-navbar {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .img-nav1, .img-nav2, .img-nav3 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  #t-1, #t-2, #t-3 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .enlaces-navbar {
+    grid-column: 1/-1;
+    grid-row: auto;
+    margin: 1em 1.5em;
+    width: auto;
+  }
+
+  .enlaces-navbar2 {
+    grid-column: 1/-1;
+    grid-row: auto;
+    margin: 1em 1.5em;
+  }
+
+  /* --- Fondos intercambiables --- */
+  .cajas {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+  }
+
+  #imgFondo { grid-column: 1/7; grid-row: 1/5; }
+  .textosFondo { grid-column: 1/5; grid-row: 5/7; padding: 1em 1.5em; }
+  .btn-fondo1, .btn-fondo2, .btn-fondo3 { grid-row: 5/6; }
+  .bloque-oscuro { grid-column: 1/7; }
+
+  /* --- Dungeons banner --- */
+  .contenedor-dungeon {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 0;
+    padding: 40px 20px;
+  }
+
+  .contenedor-dungeon img {
+    grid-column: 1/-1;
+    grid-row: auto;
+    padding: 0 0 20px 0;
+  }
+
+  .contenedor-dungeon div {
+    grid-column: 1/-1;
+    grid-row: auto;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .dungeons-2 { margin-top: 2em; }
+
+  /* --- Novedad --- */
+  .Novedad {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 30px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .Novedad div,
+  .Novedad p { width: auto; max-width: 100%; }
+
+  .btn1, .btn2 { width: 100%; max-width: 320px; }
+
+  /* --- Novedad2 / Coleccionables carrusel --- */
+  .Novedad2,
+  .coleccionables {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 30px 20px;
+  }
+
+  #textos-novedad2,
+  #textos-coleccionables {
+    grid-column: 1/-1;
+    grid-row: auto;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  #carrucel,
+  #carrucel2 {
+    grid-column: 1/-1;
+    grid-row: auto;
+    overflow-x: auto;
+  }
+
+  .botones-mover,
+  .botones-mover-2 {
+    grid-column: 1/-1;
+    grid-row: auto;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  /* --- Videos --- */
+  #videos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  #videos h1 { grid-column: 1/-1; font-size: 5ch; padding: 20px 0; }
+
+  #botones-videos {
+    grid-column: 1/-1;
+    grid-row: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .boton-video-OFF,
+  .boton-video-ON {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  #video,
+  #videos-texto {
+    grid-column: 1/-1;
+    grid-row: auto;
+    width: 100%;
+  }
+
+  /* --- Enterate --- */
+  #superior {
+    grid-template-columns: 20px 80px 3fr 2fr 20px;
+  }
+
+  #Enterate-2 { height: auto; padding: 40px 20px; }
+
+  #contenedor-enterate {
+    width: 90%;
+    height: auto;
+  }
+
+  /* --- Footer --- */
+  #Contenedor-footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  #contenedor-imagenes,
+  #text-1,
+  #col-1,
+  #col-2,
+  .Contenedor-footer img {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+/* =========================================================
+   3. Móviles (≤ 768px)
+   ========================================================= */
+@media (max-width: 768px) {
+
+  header nav img { width: 140px; }
+
+  .ul-2 li button { width: auto; font-size: 1.4ch; }
+
+  #img-nav { padding: 10px; }
+
+  /* --- Cajas navbar en una sola columna --- */
+  .caja-navbar {
+    grid-template-columns: 1fr;
+  }
+
+  .img-nav1, .img-nav2, .img-nav3,
+  #t-1, #t-2, #t-3 {
+    grid-column: 1/-1;
+  }
+
+  /* --- Fondos --- */
+  .cajas {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  #imgFondo { grid-column: 1/-1; grid-row: 1/2; height: 60vw; }
+  .textosFondo { grid-column: 1/-1; grid-row: 2/3; }
+  .btn-fondo1, .btn-fondo2, .btn-fondo3 { display: none; }
+
+  /* --- Juegos --- */
+  .contenedor-juegos {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .juego { height: auto; }
+
+  /* --- Novedad2 / Coleccionables --- */
+  .Novedad2 h1,
+  #textos-coleccionables h1 { font-size: 4.5ch; }
+
+  /* --- Videos texto --- */
+  #videos-texto {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  #videos-texto p { width: 100%; }
+
+  /* --- Noticias --- */
+  .caja-noticias,
+  .caja-noticias-2 {
+    width: 45%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  /* --- Enterate superior --- */
+  #superior {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  #superior img { grid-column: 1/-1; grid-row: 1; width: 80px; margin: 0 auto; }
+  #superior div { grid-column: 1/-1; grid-row: 2; }
+  #superior button { grid-column: 1/-1; grid-row: 3; justify-self: center; }
+
+  #Enterate { height: auto; padding: 40px 20px; }
+
+  /* --- Enterate 2 form --- */
+  #contenedor-enterate {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  #contenedor-enterate h1,
+  #contenedor-enterate p,
+  #correo-igresar,
+  #campo-seleccionable,
+  #condiciones {
+    grid-column: 1/-1;
+  }
+
+  #condiciones { flex-direction: column; align-items: flex-start; gap: 10px; }
+
+  /* --- Footer --- */
+  #Contenedor-footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .iconos { justify-content: center; }
+
+  .columna { align-items: center; }
+}
+
+/* =========================================================
+   4. Móviles pequeños (≤ 480px)
+   ========================================================= */
+@media (max-width: 480px) {
+
+  .ul-2 { gap: 5px; }
+  #boton-verde { width: 110px; font-size: 1.3ch; }
+
+  .btn-bar, .btn-bar.activo { flex: 1 1 100%; }
+
+  .Novedad h1,
+  .Novedad2 h1,
+  #textos-coleccionables h1,
+  #videos h1,
+  #noticias h1 {
+    font-size: 3.5ch;
+  }
+
+  .btn1, .btn2, .btn-verde,
+  .contenedor-dungeon div button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .caja-noticias,
+  .caja-noticias-2 {
+    width: 100%;
+  }
+
+  #contenedor-enterate h1 { font-size: 4ch; }
+
+  #Contenedor-footer span { font-size: 3ch; }
+
+  .contenedor-dungeon h1 { font-size: 3.5ch; }
+}
