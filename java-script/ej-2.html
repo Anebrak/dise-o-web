@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej-2</title>
+</head>
+<body>
+    valor 1:<input type="text" id="ev-1">
+    valor 2:<input type="text" id="ev-2">
+    Resultado:<input type="text" id="ev-3">
+
+    <button onclick="sumar()"> SUMAR </button>
+    <button onclick="comparar()"> comparar </button>
+
+
+    <script>
+
+        function sumar (){
+      
+       
+            
+            let a = parseInt(document.getElementById('ev-1').value)
+            let b = parseInt(document.getElementById('ev-2').value)
+            let suma = a+b;
+            
+            document.getElementById('ev-3').value = suma
+
+
+
+        }
+
+        function comparar (){
+      
+       
+            
+            let a = parseInt(document.getElementById('ev-1').value)
+            let b = parseInt(document.getElementById('ev-2').value)
+            
+            if (a > b){
+            document.getElementById('ev-3').style.backgroundColor = 'green' 
+
+            }else if (a === b){
+                document.getElementById('ev-3').style.backgroundColor = 'yellow' 
+
+
+            }else{
+            document.getElementById('ev-3').style.backgroundColor = 'red' 
+                
+            }
+            
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
